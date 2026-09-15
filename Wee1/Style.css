@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+.weather-card h2 {
+    margin-bottom: 20px;
+    color: #2d3436;
+    font-size: 1.5rem;
+}
+
+.weather-card h2 i {
+    color: #0984e3;
+    margin-right: 8px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #0984e3;
+}
+
+.search-box button {
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #74b9ff;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-msg {
+    color: #d63031;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.weather-result h3 {
+    font-size: 1.4rem;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.temp-section {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2d3436;
+    margin-bottom: 5px;
+}
+
+.temp-section .unit {
+    font-size: 1.5rem;
+    vertical-align: super;
+}
+
+.condition {
+    font-size: 1.1rem;
+    color: #636e72;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    background-color: #f1f2f6;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.detail-item i {
+    font-size: 1.5rem;
+    color: #0984e3;
+}
+
+.detail-item .label {
+    font-size: 0.8rem;
+    color: #b2bec3;
+    display: block;
+    text-align: left;
+}
+
+.detail-item p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d3436;
+}

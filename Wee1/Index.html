@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="weather-card">
+        <h2><i class="fa-solid fa-cloud-sun"></i> Weather App</h2>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name..." autocomplete="off">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div id="errorMsg" class="error-msg hidden">City not found. Please try again.</div>
+
+        <div id="weatherResult" class="weather-result hidden">
+            <h3 id="cityName">--</h3>
+            <div class="temp-section">
+                <span id="temperature">--</span><span class="unit">°C</span>
+            </div>
+            <p id="condition" class="condition">--</p>
+
+            <div class="details">
+                <div class="detail-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <span class="label">Humidity</span>
+                        <p id="humidity">--%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
